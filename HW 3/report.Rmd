@@ -1,0 +1,66 @@
+---
+title: "INFO 201 Homework 3"
+output: html_document
+author: YOUR NAME GOES HERE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+source("climate.R") #Change this line to the name of your homework file
+```
+
+## Examining Carbon Emissions
+
+In the plot below, we examine how carbon footprint per capita has changed over time across the world since 1979:
+
+```{r fig1, fig.height = 5, fig.width = 9, echo=FALSE}
+#plot your carbon_em_lineplot here
+
+```
+
+From this plot you should be able to see two regions showing opposing trends. While overall all regions show a decline in carbon footprint per capita, South America's carbon footprint rapidly increased in the early 2000s before finally starting to decline after 2010. In contrast, Western Asia's carbon footprint has dramatically decreased until the early 2000s -- after which, the trend plateaued.
+
+If we then examine the distributions of carbon footprint across of the eight regions (shown in the plot below), we can see that there may be outlier countries in both the South America and Western Asia regions. The presence of these outlier countries could explain why those two regions has such unusual trends in carbon pootrpint overtime. 
+
+```{r fig2, fig.height = 6, fig.width = 11, echo=FALSE}
+#plot your carb_em_region here
+
+```
+
+Especially as for many of these countries in those regions, the overall life expectancy and wealth increased between 2000:
+
+```{r fig6, fig.height = 5, fig.width = 9, echo=FALSE}
+#plot the results when you use your le_vs_mhinc_plot function for the year 2000 here 
+
+```
+
+And 2010: 
+
+```{r fig7, fig.height = 5, fig.width = 9, echo=FALSE}
+#plot the results when you use your le_vs_mhinc_plot function for the year 2010 here  
+```
+
+## Examining Carbon Footprint Inequalities 
+
+There is a remakable disparity in carbon emissions (as measured by carbon footprint) between the wealthiest countries and the poorest countries. As seen in the plot below, a small number of wealthy countries contribute a significantly higher amount of carbon emissions: 
+
+```{r fig3, fig.height = 5, fig.width = 8, echo=FALSE}
+#plot your carb_em_ic here
+
+```
+
+And even within the wealthiest countries, an even small number contribute disproportionately higher amounts of carbon. As seen in the figure below, the countires that produce the most carbon are also some of the wealthiest in the world. 
+
+```{r fig4, fig.height = 7, fig.width = 8, echo=FALSE}
+#plot your high_inc_barplot here
+
+```
+
+In fact, if you look at the relationship between carbon footprint and median household income you will see a startling trend:
+
+```{r fig5, fig.height = 5, fig.width = 8, echo=FALSE}
+#plot your carb_inc_scatter here
+
+```
+
+As median income increases so does carbon footprint (at an incredibly high rate). Only countries from the High Income and Upper Middle Income groups produce the the highest number of carbon emissions (as measured by carbon footprint). 
